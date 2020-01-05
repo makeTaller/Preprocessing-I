@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: orange;
+	margin:5%;
 }
 ol, ul {
 	list-style: none;
@@ -55,7 +57,6 @@ table {
 
 html, body {
     height: 100%;
-    background: red;
 }
 
 div {
@@ -63,8 +64,26 @@ div {
 	box-sizing: border-box;
     }
 
+ // .......begining of my edits......
+    
+.flex-my-block(@justify, @align, @direction){
+	display:flex;
+	justify-content:@justify;
+	align-items:@align;
+	flex-direction:@direction;
+}
 
- // THis is the begining of my edits.
+header{
+	padding:2em;
+	.flex-my-block(space-between, center,column);	
+}
+
+.heading{
+	font-size:2rem;
+	color:white;
+}
+
+ // This is the begining of the timeline code .
 
 .timeline {
                 width: 400px;

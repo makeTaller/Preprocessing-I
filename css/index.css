@@ -134,6 +134,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   height: 100%;
 }
 div {
@@ -147,9 +148,34 @@ header {
   align-items: center;
   flex-direction: column;
 }
-.heading {
-  font-size: 2rem;
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+nav a {
+  text-decoration: none;
   color: white;
+  font-size: 3em;
+}
+a:hover {
+  color: gray;
+}
+.heading {
+  padding: 2%;
+  font-size: 2.7rem;
+  background: white;
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+.header-img {
+  height: 35vh;
+  width: 100%;
+}
+.time {
+  border: solid;
 }
 .timeline {
   width: 400px;

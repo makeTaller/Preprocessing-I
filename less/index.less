@@ -56,7 +56,8 @@ table {
 }
 
 html, body {
-    height: 100%;
+	font-size:62.5%;
+   	height: 100%;
 }
 
 div {
@@ -78,12 +79,42 @@ header{
 	.flex-my-block(space-between, center,column);	
 }
 
-.heading{
-	font-size:2rem;
-	color:white;
+nav{
+	.flex-my-block(space-evenly, center,row);	
 }
 
- // This is the begining of the timeline code .
+
+
+nav a{
+	text-decoration:none;
+	color:white;
+	font-size:3em;
+}
+
+a:hover{
+	color:gray;
+}
+
+.heading{
+	padding:2%;
+	font-size:2.7rem;
+	background:white;
+	width:100%;
+	text-align:center;
+	color:gray;
+}
+
+.header-img{
+	height:35vh;
+	width:100%;
+}
+
+.time{
+	border:solid;
+}
+
+
+ //..... This is the begining of the timeline code ......
 
 .timeline {
                 width: 400px;

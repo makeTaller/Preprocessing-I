@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	// border:solid white;
 	line-height: 1;
 	background: orange;
 	margin:5%;
@@ -66,6 +67,11 @@ div {
     }
 
  // .......begining of my edits......
+ 
+
+.custom-font{
+	font-size: 3rem;
+}
     
 .flex-my-block(@justify, @align, @direction){
 	display:flex;
@@ -75,22 +81,24 @@ div {
 }
 
 header{
-	padding:2em;
+	padding:2rem;
 	.flex-my-block(space-between, center,column);	
 }
 
 nav{
+
 	.flex-my-block(space-evenly, center,row);	
-}
 
-
-
-nav a{
+	a{
 	text-decoration:none;
 	color:white;
-	font-size:3em;
-}
+	font-size:3rem;
+ } // anchor 
+}//nav
 
+
+
+nav 
 a:hover{
 	color:gray;
 }
@@ -109,15 +117,26 @@ a:hover{
 	width:100%;
 }
 
-.time{
-	border:solid;
+.intro{
+	.custom-font();
+}
+.skills{
+	.flex-my-block(space-evenly, center, row);
+	.custom-font();
+}
+
+.p-struct{
+	display:flex;
+	color: white; 
+	justify-content:center;
+	flex-direction:column;
 }
 
 
  //..... This is the begining of the timeline code ......
 
 .timeline {
-                width: 400px;
+                width: 600px;
             }
 .timeline .timeline-item {
                 width: 100%;
@@ -147,7 +166,7 @@ a:hover{
                 margin-left: -2px;
                 padding: 0 0 40px 35px;
                 border-left: 4px solid #aaa;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 20px;
             }
 .timeline .timeline-item .marker {

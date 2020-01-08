@@ -141,8 +141,11 @@ div {
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
+.custom-font {
+  font-size: 3rem;
+}
 header {
-  padding: 2em;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,9 +160,9 @@ nav {
 nav a {
   text-decoration: none;
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
 }
-a:hover {
+nav a:hover {
   color: gray;
 }
 .heading {
@@ -174,11 +177,24 @@ a:hover {
   height: 35vh;
   width: 100%;
 }
-.time {
-  border: solid;
+.intro {
+  font-size: 3rem;
+}
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  font-size: 3rem;
+}
+.p-struct {
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
 }
 .timeline {
-  width: 400px;
+  width: 600px;
 }
 .timeline .timeline-item {
   width: 100%;
@@ -210,7 +226,7 @@ a:hover {
   margin-left: -2px;
   padding: 0 0 40px 35px;
   border-left: 4px solid #aaa;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 20px;
 }
 .timeline .timeline-item .marker {

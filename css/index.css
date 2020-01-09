@@ -187,9 +187,14 @@ nav a:hover {
   flex-direction: row;
   font-size: 3rem;
 }
+.skill-set {
+  color: gray;
+}
 .p-struct {
   display: flex;
+  padding: 8px;
   color: white;
+  font-size: 2rem;
   justify-content: center;
   flex-direction: column;
 }
